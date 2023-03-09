@@ -1,0 +1,22 @@
+.banner-content__list.list {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap:15px;
+   & .list-item {
+      display: flex;
+      gap:20px;
+      min-height: 50px;
+      align-items: center;
+      &__icon {
+         flex-shrink: 0;
+         width:45px;
+         height:45px;
+         border: 1px solid white;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+}

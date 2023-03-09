@@ -1,0 +1,11 @@
+.target {
+  margin-bottom: 100px;
+  &-heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  &-list {
+   padding:0;
+  }
+}

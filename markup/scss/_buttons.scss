@@ -1,0 +1,40 @@
+$button-font-family: interit;
+$button-font-size: $font-size-base;
+$button-font-weight: $font-weight-regular;
+$button-line-height: $line-height-base;
+$button-padding-x: 30px;
+$button-padding-y: 20px;
+
+$button-color: $color-white;
+
+$button-hover-color: $button-color;
+$button-disabled-color: $button-color;
+
+$button-hover-background-color: $color-dark-red;
+$button-border-width: $border-width;
+$button-border-radius: 15px;
+$button-cursor: $cursor-pointer;
+$button-min-width: 10.625rem;
+
+.button {
+   min-height: 60px;
+   min-width:223px;
+   background-color: $color-red;
+   color: $button-color;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   border-radius: $button-border-radius;
+   padding: $button-padding-x, $button-padding-y;
+   cursor: $button-cursor;
+   font-size: 20px;
+   font-weight: 700;
+   border: none;
+   &:hover {
+      color: $button-hover-color;
+      text-decoration: none;
+      background-color:  $button-hover-background-color;
+      transition: background-color .2s ease;
+   }
+}

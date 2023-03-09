@@ -1,0 +1,14 @@
+@each $range-name, $unicode-range in $unicode-ranges {
+  @each $weight-name, $font-weight in $font-weights {
+    @each $style-name, $font-style in $font-styles {
+      @font-face {
+        font-family: $main-font-family-name;
+        font-style: $font-style;
+        font-weight: $font-weight;
+        src: url('../fonts/#{$main-font-family-name}/#{$main-font-family-name}-#{$weight-name}-#{$style-name}-#{$range-name}.#{$font-format}') format($font-format);
+        font-display: $font-display;
+        unicode-range: $unicode-range;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  background: url("./../../assets/img/footer-bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: $color-white;
+  .all-rights {
+    font-size: 12px;
+  }
+}

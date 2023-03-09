@@ -1,0 +1,12 @@
+.common-block {
+   background-color: $color-white;
+   width:300px;
+   @include shadow();
+   margin: 0 auto;
+   padding: 60px 20px;
+   border-radius: 15px;
+   margin-bottom: 100px;
+   display: flex;
+   flex-direction: column;
+   gap:50px;
+}

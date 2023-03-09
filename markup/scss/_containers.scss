@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  padding-right: calc($container-gutter-x / 2);
+  padding-left: calc($container-gutter-x / 2);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 992px) {
+  header .container {
+    width: 100%;
+    padding-left:  20px;
+    padding-right: 20px;
+  }
+  main .container {
+    width: 100%;
+    padding-left:  20px;
+    padding-right: 20px;
+  }
+  footer .container { 
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@each $breakpoint, $max-width in $container-max-widths {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    .container {
+      max-width: $max-width;
+    }
+  }
+}

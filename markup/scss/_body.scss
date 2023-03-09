@@ -1,0 +1,23 @@
+html,
+body {
+  min-height: 100vh;
+  font-size: 17px;
+  color:$color-black-text;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex: 1 1 auto;
+    background-color: $color-gray;
+    z-index: 0;
+  }
+
+  footer {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 320px;
+  }
+}

@@ -1,0 +1,35 @@
+.banner {
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  min-height: 810px;
+  background-image: url("./../../assets/img/banner-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top:40px;
+  &-content {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    & &__name {
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+      }
+    }
+    &__countdown {
+      color: $color-white;
+      font-size: 36px;
+      align-self: baseline;
+    }
+    &__info {
+
+    }
+    &__list {
+      padding:0;
+    }
+  }
+}

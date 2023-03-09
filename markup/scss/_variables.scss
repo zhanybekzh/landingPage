@@ -1,0 +1,231 @@
+$color-black: #000;
+$color-black-text:#282A30;
+$color-red: #DD2A1B;
+$color-dark-red: #b12013;
+$color-orange: #F17B41;
+$color-dark-orange: #b96236;
+$color-yellow: #FEBD0A;
+$color-light-yellow: #FFF7CF;
+$color-white: #fff;
+$color-gray: #F8F9FB;
+
+$color-green-500: #004f56;
+$color-green-400: #095d64;
+$color-green-300: #00898d;
+$color-green-200: #79d0d2;
+$color-green-100: #d8f2ef;
+$color-gray-400: #626b6d;
+$color-gray-300: #c6c9cb;
+$color-gray-200: #f3f3f3;
+$color-gray-100: #f8f8f8;
+$colors: (
+  black: $color-black,            // sass-lint:disable-line no-color-keywords
+  black-text: $color-black-text,
+  red: $color-red,                // sass-lint:disable-line no-color-keywords
+  orange: $color-orange,          // sass-lint:disable-line no-color-keywords
+  light-yellow: $color-light-yellow,
+  yellow: $color-yellow,          // sass-lint:disable-line no-color-keywords
+  white: $color-white,            // sass-lint:disable-line no-color-keywords
+  green-500: $color-green-500,
+  green-400: $color-green-400,
+  green-300: $color-green-300,
+  green-200: $color-green-200,
+  green-100: $color-green-100,
+  gray-400: $color-gray-400,
+  gray-300: $color-gray-300,
+  gray-200: $color-gray-200,
+  gray-100: $color-gray-100
+);
+
+$main-font-family-name: Roboto;
+
+$var-prefix: stsl-;
+
+$font-style-normal: normal;
+$font-style-italic: italic;
+$font-styles: (
+  normal: $font-style-normal,
+  italic: $font-style-italic
+);
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weights: (
+  regular: $font-weight-regular,
+  bold: $font-weight-bold
+);
+
+$font-display-swap: swap;
+$font-display: $font-display-swap;
+
+$font-format: 'woff2';
+
+$unicode-range-cyrillic-ext: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+$unicode-range-cyrillic: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+$unicode-range-latin-ext: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+$unicode-range-latin: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+$unicode-ranges: (
+  cyrillic-ext: $unicode-range-cyrillic-ext,
+  cyrillic: $unicode-range-cyrillic,
+  latin-ext: $unicode-range-latin-ext,
+  latin: $unicode-range-latin
+);
+
+$screen-width-sm: 576px;
+$screen-width-md: 768px;
+$screen-width-lg: 992px;
+$screen-width-xl: 1200px;
+$screen-width-xxl: 1400px;
+$breakpoints: (
+  sm: $screen-width-sm,
+  md: $screen-width-md,
+  lg: $screen-width-lg,
+  xl: $screen-width-xl,
+  xxl: $screen-width-xxl
+);
+
+$font-size-base: 1rem;
+$font-size-small: .875em;
+$font-size-1: 2rem;
+$font-size-2: 1.75rem;
+$font-size-3: 1.5rem;
+$font-size-4: 1.25rem;
+$font-size-5: 1.125rem;
+$font-size-6: $font-size-base;
+$font-sizes: (
+  1: $font-size-1,
+  2: $font-size-2,
+  3: $font-size-3,
+  4: $font-size-4,
+  5: $font-size-5,
+  6: $font-size-6,
+);
+
+$text-transform-uppercase: uppercase;
+$text-transform-lowercase: lowercase;
+$text-transform-capitalize: capitalize;
+$text-transforms: (
+  uppercase: $text-transform-uppercase,
+  lowercase: $text-transform-lowercase,
+  capitalize: $text-transform-capitalize,
+);
+
+$text-decoration-none: none;
+$text-decoration-underline: underline;
+$text-decoration-line-through: line-through;
+$text-decorations: (
+  none: $text-decoration-none,
+  underline: $text-decoration-underline,
+  line-through: $text-decoration-line-through
+);
+
+$text-align-start: start;
+$text-align-center: center;
+$text-align-end: end;
+$text-aligns: (
+  start: $text-align-start,
+  center: $text-align-center,
+  end: $text-align-end
+);
+
+$font-family-sans-serif: $main-font-family-name, system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+$line-height-base: 1.5;
+
+$body-font-family: $font-family-sans-serif;
+$body-font-size: $font-size-base;
+$body-line-height: $line-height-base;
+$body-color: $color-black-text;
+$body-background: $color-white;
+
+$spacer: $font-size-base;
+
+$border-color: $color-gray-400;
+$border-width: 1px;
+$border-radius: .875rem;
+
+$hr-margin-y: $spacer;
+$hr-color: inherit;
+$hr-border-width: $border-width;
+$hr-opacity: .25;
+
+$headings-margin-bottom: $spacer * .5;
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1.2;
+$headings-color: $color-green-500;
+
+$paragraph-margin-bottom: $spacer;
+
+$dt-font-weight: $font-weight-bold;
+
+$mark-padding: .1875em;
+$mark-background: $color-green-100;
+
+$sub-sup-font-size: .75em;
+
+$link-color: $color-green-300;
+$link-decoration: $text-decoration-underline;
+$link-shade-percentage: 20%;
+$link-hover-color: mix($color-black, $link-color, $link-shade-percentage);
+$link-hover-decoration: $text-decoration-underline;
+
+$code-font-family: $font-family-monospace;
+$code-font-size: $font-size-small;
+$code-color: $color-orange;
+
+$kbd-padding-y: .1875rem;
+$kbd-padding-x: .375rem;
+$kbd-font-size: $code-font-size;
+$kbd-color: $body-background;
+$kbd-background: $body-color;
+
+$table-cell-padding-y: .5rem;
+$table-cell-padding-x: .5rem;
+$table-caption-color: $color-gray-400;
+
+$legend-margin-bottom: .5rem;
+$legend-font-size: 1.5rem;
+
+$blockquote-margin-y: $spacer;
+$blockquote-font-size: $font-size-base * 1.25;
+$blockquote-footer-color: $color-gray-400;
+$blockquote-footer-font-size: $font-size-small;
+
+$figure-caption-font-size: $font-size-small;
+$figure-caption-color: $color-gray-400;
+
+$container-gutter-x: $spacer;
+$container-sm-max-width: 540px;
+$container-md-max-width: 720px;
+$container-lg-max-width: 960px;
+$container-xl-max-width: 1140px;
+$container-xxl-max-width: 1140px;
+$container-max-widths: (
+  sm: $container-sm-max-width,
+  md: $container-md-max-width,
+  lg: $container-lg-max-width,
+  xl: $container-xl-max-width,
+  xxl: $container-xxl-max-width
+);
+
+$table-color: $body-color;
+$table-background: transparent;
+$table-striped-color: $table-color;
+$table-striped-background: $color-gray-100;
+$table-hover-color: $table-color;
+$table-hover-background: $color-gray-200;
+$table-border-color: $color-gray-300;
+$table-border-width: $border-width;
+$table-cell-vertical-align: top;
+$table-cell-padding-y: .5rem;
+$table-cell-padding-x: .5rem;
+$table-cell-padding-y-sm: .25rem;
+$table-cell-padding-x-sm: .25rem;
+
+$item-offsets: 20px;
+
+$cursor-pointer: pointer;
+
+$margin-ranges: -200, -100, -90, -80, -70, -60, -50, -40, -30,-20, -10, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130,140, 150, 200;
+$auth-bg-overlay-color: rgba(0, 137, 141, .2);

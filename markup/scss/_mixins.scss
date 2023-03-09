@@ -1,0 +1,11 @@
+@mixin mb($range) {
+   margin-bottom: #{$range}px;
+ }
+
+ @mixin mt($range) {
+   margin-top: #{$range}px;
+ }
+
+  @mixin shadow() {
+    box-shadow: 0px 20px 50px 0px rgba(227, 229, 234, 1);
+  }

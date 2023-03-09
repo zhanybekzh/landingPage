@@ -1,0 +1,64 @@
+.h1 {
+  @extend %h1;
+}
+
+.h2 {
+  @extend %h2;
+}
+
+.h3 {
+  @extend %h3;
+}
+
+.h4 {
+  @extend %h4;
+}
+
+.h5 {
+  @extend %h5;
+}
+
+.h6 {
+  @extend %h6;
+}
+
+.small {
+  @extend %small;
+}
+
+.mark {
+  @extend %mark;
+}
+
+.black-link {
+  color: $color-black-text;
+
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.blockquote {
+  margin-bottom: $blockquote-margin-y;
+  font-size: $blockquote-font-size;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blockquote-footer {
+  margin-top: -$blockquote-margin-y;
+  margin-bottom: $blockquote-margin-y;
+  font-size: $blockquote-footer-font-size;
+  color: $blockquote-footer-color;
+
+  &::before {
+    content: '\2014\00A0';
+  }
+}
+
+.bold {
+  font-weight: 700;
+}

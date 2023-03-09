@@ -1,0 +1,23 @@
+.target-list.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .list-item {
+    @include shadow;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    &__image {
+      img {
+        display: block;
+      }
+    }    
+    &__content {
+      padding: 35px 35px 45px;
+      background-color: $color-white;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+}

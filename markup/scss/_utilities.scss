@@ -1,0 +1,109 @@
+@each $name, $color in $colors {
+  .text-#{'' + $name} {
+    color: $color !important; // sass-lint:disable-line no-important
+  }
+}
+
+@each $name, $color in $colors {
+  .background-#{'' + $name} {
+    background-color: $color !important; // sass-lint:disable-line no-important
+  }
+}
+
+@each $name, $font-weight in $font-weights {
+  .font-weight-#{$name} {
+    font-weight: $font-weight !important; // sass-lint:disable-line no-important
+  }
+}
+
+@each $name, $font-style in $font-styles {
+  .font-style-#{$name} {
+    font-style: $font-style !important; // sass-lint:disable-line no-important
+  }
+}
+
+@each $name, $font-size in $font-sizes {
+  .font-size-#{$name} {
+    font-size: $font-size !important; // sass-lint:disable-line no-important
+  }
+}
+
+@each $size, $width in $breakpoints {
+  @media (min-width: $width) {
+    @each $name, $font-size in $font-sizes {
+      .font-size-#{$size}-#{$name} {
+        font-size: $font-size !important; // sass-lint:disable-line no-important
+      }
+    }
+  }
+}
+
+@each $name, $transform in $text-transforms {
+  .text-transform-#{$name} {
+    text-transform: $transform !important; // sass-lint:disable-line no-important
+  }
+}
+
+@each $name, $decoration in $text-decorations {
+  .text-decoration-#{$name} {
+    text-decoration: $decoration !important; // sass-lint:disable-line no-important
+  }
+}
+
+@each $name, $align in $text-aligns {
+  .text-align-#{$name} {
+    text-align: $align !important; // sass-lint:disable-line no-important
+  }
+}
+
+@each $size, $width in $breakpoints {
+  @media (min-width: $width) {
+    @each $name, $align in $text-aligns {
+      .text-align-#{$size}-#{$name} {
+        text-align: $align !important; // sass-lint:disable-line no-important
+      }
+    }
+  }
+}
+
+.fx-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-div {
+  margin: 0 auto;
+  width:fit-content;
+}
+.center-elem {
+  margin: 0 auto;
+  width:fit-content;
+}
+.text-center {
+  text-align: center;
+}
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block;
+}
+.d-inline-block  {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+.d-grid {
+  display: grid;
+}
+@each $margin-range in $margin-ranges {
+  .mb-#{$margin-range} {
+    @include mb($margin-range);
+  }
+  .mt-#{$margin-range} {
+    @include mt($margin-range);
+  }
+
+}
