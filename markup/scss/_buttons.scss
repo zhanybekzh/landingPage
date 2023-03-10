@@ -10,7 +10,7 @@ $button-color: $color-white;
 $button-hover-color: $button-color;
 $button-disabled-color: $button-color;
 
-$button-hover-background-color: $color-dark-red;
+$button-hover-background-color: #6b8e34;
 $button-border-width: $border-width;
 $button-border-radius: 15px;
 $button-cursor: $cursor-pointer;
@@ -18,8 +18,8 @@ $button-min-width: 10.625rem;
 
 .button {
    min-height: 60px;
-   min-width:223px;
-   background-color: $color-red;
+   min-width:220px;
+   background-color:#83ab42; 
    color: $button-color;
    display: flex;
    align-items: center;

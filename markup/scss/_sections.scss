@@ -1,0 +1,15 @@
+.section {
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+    padding: 70px 0;
+    &:nth-child(2n + 1) {
+        background-color: #eff2f7;
+    }
+}

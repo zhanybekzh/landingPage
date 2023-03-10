@@ -1,0 +1,29 @@
+.about-us {
+    &__list {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+        margin-top: 40px;
+    }
+    &__item {
+        display: flex;
+        gap: 30px;
+
+    }
+    &__img {
+        display: none;
+        @media(min-width:420px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    p {
+        margin: 0;
+    }
+    .icon {
+        color:#83ab42;
+    }
+}
