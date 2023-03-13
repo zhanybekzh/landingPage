@@ -7,29 +7,99 @@
         <link rel="stylesheet" href="./markup/css/main.css" />
         <link rel="stylesheet" href="./markup/css/main.css.map"/>
         <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png">
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        
         <script src="./feather.min.js"></script>
-        <title>Буровзрывные работы ГеоЛиния</title>
+        <title>Буровзрывные работы Гео Линия</title>
     </head>
     <body>
-        <main>
+        <main id="main">
             <section class="banner">
-                <div class="container">
-                    <div class="banner__inner">
-                        <h1 class="banner__title">
-                            Буровзрывные работы в Казахстане
-                        </h1>
-                        <h2 class="banner__subtitle">
-                            Выполняем весь комплекс горных и буровзрывных работ
-                            на объектах горнодобывающей промышленности и
-                            дорожного строительства
-                        </h2>
-                        <a class="mt-60 center-div button banner__button">
-                            Получить консультацию
-                        </a>
+                    <div class="full-screen">
+                        <div class="header-menu" >
+                            <div class="container">
+                                <div class="header-menu__content">
+                                    <a href="#" class="header-menu__logo">
+                                        <img src="./../../assets/icons/logo.png" alt="Логотип Геолиния">
+                                    </a>
+                                    <ul class="header-menu__list">
+                                        <li class="header-menu__item">
+                                            <a href="#main">Главная</a>    
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#about">О компании</a>      
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#services">Наши услуги</a>      
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#licenses">Лицензия</a>      
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#contacts">Контакты</a>     
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-mobile-menu" >
+                            
+                                <div class="header-mobile-menu__content">
+                                    <a href="#" class="header-mobile-menu__logo">
+                                        <img src="./../../assets/icons/logo.png" alt="Логотип Геолиния">
+                                    </a>
+
+                                    <div id="menuButton" class="header-mobile-menu-icon__wrapper">
+                                        <div class="header-mobile-menu-icon">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <ul class="header-mobile-menu__list">
+                                    <li class="header-mobile-menu__item">
+                                        <a href="#main">Главная</a>    
+                                    </li>
+                                    <li class="header-mobile-menu__item">
+                                        <a href="#about">О компании</a>      
+                                    </li>
+                                    <li class="header-mobile-menu__item">
+                                        <a href="#services">Наши услуги</a>      
+                                    </li>
+                                    <li class="header-mobile-menu__item">
+                                        <a href="#licenses">Лицензия</a>      
+                                    </li>
+                                    <li class="header-mobile-menu__item">
+                                        <a href="#contacts">Контакты</a>     
+                                    </li>
+                                </ul>
+                                
+                        </div>
+                        
+                        <div class="full-screen__body">
+                            <div class="container">
+                                <h1 class="banner__title">
+                                    Буровзрывные работы в Казахстане
+                                </h1>
+                                <h2 class="banner__subtitle">
+                                    Выполняем весь комплекс горных и буровзрывных работ
+                                    на объектах горнодобывающей промышленности и
+                                    дорожного строительства
+                                </h2>
+                                <a class="mt-60 center-div button banner__button">
+                                    Получить консультацию
+                                </a>
+                            </div>
+                        </div>
+                        <video autoplay muted loop playsinline poster class="full-screen__video" >
+                            <source src="./../../assets/video/bcg.mp4" type="video/mp4">
+                        </video>
                     </div>
-                </div>
             </section>
-            <section class="section about-us">
+            <section id="about" class="section about-us">
                 <div class="container">
                     <h2 class="section__title">О КОМПАНИИ</h2>
                     <h3 class="section__subtitle">
@@ -76,34 +146,231 @@
                     </ul>
                 </div>
             </section>
-            <section class="section our-services">
+            <section id="services" class="section our-services">
                 <div class="container">
                     <h2 class="section__title">НАШИ УСЛУГИ</h2>
                     <h3 class="section__subtitle">
                         Выполняем поставленные задачи и детально изучаем каждый объект, предлагаем клиентам экономически и технологически оптимальные решения.
                     </h3>
+                    <div class="vertical-service-img-features mb-100">
+                        <div class="vertical-service-img-features__items">
+                            <div class="vertical-service-img-features__item">
+                                <img src="./../../assets/img/bur.jpeg" alt="Фото бур">
+                                <div
+                                    class="vertical-service-img-features__content"
+                                >
+                                    <h3
+                                        class="vertical-service-img-features__title"
+                                    >
+                                        Буровые работы
+                                    </h3>
+                                    <div
+                                        class="vertical-service-img-features__text"
+                                    >
+                                    Выполняем весь процесс буровых работ под следующие виды скважин:
+                                    </div>
+                                    <ul><li>Сейсморазведочных скважин под взрыв</li><li>Эксплуатационного</li><li>Строительного</li><li>Геологического</li><li>Гидрогеологического</li><li>Разведочного и другого назначения, а также скважин под фундамент различных зданий и сооружений</li></ul>
+                                </div>
+                            </div>
+                            <div class="vertical-service-img-features__item">
+                                <img src="./../../assets/img/vzryv.webp" alt="Фото буровые работы">
+                                <div
+                                    class="vertical-service-img-features__content"
+                                >
+                                    <h3
+                                        class="vertical-service-img-features__title"
+                                    >
+                                    Взрывные работы
+                                    </h3>
+                                    <div
+                                        class="vertical-service-img-features__text"
+                                    >
+                                    Одним из главных направлений нашей Компании являются взрывные работы.
+                                    Производим оперативно и профессионально весь процесс взрывных работ:
+                                    </div>
+                                    <ul><li>Сейсморазведочных скважин под взрыв</li><li>Подготовка к взрыву (заряжание взрывчатых веществ, забойка скважин, монтирование взрывной сети)</li><li>Инициирование и производство взрыва</li><li>Гарантируем безопасность и качества работы от оформления проектно-технической документации до полной отработки взрываемого блока</li><li>Взрывные работы выполняются с применением высококачественных взрывчатых веществ и не электрическими системами инициирования</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="section get-help">
+            <section id="order" class="section get-help">
                 <div class="container">
-                    <h2 class="section__title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h2>
+                    <h2 class="section__title">ОБРАТНАЯ СВЯЗЬ</h2>
+                    <p>
+                        Оставьте свои контактные данные, и менеджер свяжется с вами в удобное для вас время
+                    </p>
+                    <a class="mt-60 center-div button banner__button">
+                        Заказать звонок
+                    </a>
                 </div>
             </section>
-            <section class="section licenses">
+            <section id="licenses" class="section licenses">
                 <div class="container">
                     <h2 class="section__title">НАШИ ЛИЦЕНЗИИ</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report1.webp" alt="Лицензия"  loading="lazy" />
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report2.webp" alt="Лицензия"  loading="lazy" />
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report3.webp" alt="Лицензия"  loading="lazy" />
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report4.webp" alt="Лицензия"  loading="lazy" />
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report5.webp" alt="Лицензия"  loading="lazy" />
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report6.webp" alt="Лицензия"  loading="lazy" />
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report7.webp" alt="Лицензия"  loading="lazy" />
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report8.webp" alt="Лицензия"  loading="lazy" />
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container"> 
+                                    <img  src="./../../assets/img/report9.webp" alt="Лицензия"  loading="lazy"/>
+                                    <div class="swiper-lazy-preloader "></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
                 </div>
             </section>
+            <section id="contacts" class="section map">
+                
+                <div class="contacts">
+                    
+                    <h3>Буровые работы</h3>
+                    <h3 class="mb-40">ТОО "ГЕОЛАЙН"</h3>
+                    <p class="mb-20">Время работы: Пн - Пт, 9.00 - 18.00</p>
+                    <p class="mb-0"><a href="tel:+77764222201">+77764222201</a></p>
+                    <p class="mb-0"><a href="mailto:info@geo-line.kz">info@geo-line.kz</a></p>
+                    <p class="mb-40">г.Усть-Каменогорск, ул. Плахуты 62</p>
+                    <div class="socials">
+                        <a href="" ><i  data-feather="instagram" class="icon-44"></i></a>
+                    </div>
+               
+                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5084bbadd7b29a07e23d2ed90f23b912c836a6bf82815e09612b917d81100bde&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+            
+        </section>
+        
+        
         </main>
-        <footer class="footer" style="background-color:rgb(96, 96, 95);">
+        <footer>
             <div class="container">
                 <div class="footer__inner">
-                    <h2 class="section__title">КОНТАКТЫ</h2>
+                    <h5>© Все права защищены. Геолиния, <span id="this_year"></span></h5>
                 </div>
             </div>
         </footer>
     </body>
+    
     <script>
         feather.replace();
     </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+        
+        const swiper = new Swiper('.swiper', {
+            zoom: true,
+            loop: true,
+            preloadImages: false,
+            lazy: true,
+            grabCursor: true,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: "fraction",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+      </script>
+      <script>
+        const today = new Date();
+        const allRightsYear = document.querySelector('#this_year').textContent = today.getFullYear();
+
+        const menuButton = document.querySelector('#menuButton');
+        const mobileMenu = document.querySelector('.header-mobile-menu');
+        let isMobileMenuOpened = false;
+        function checkMobileMenuState() {
+            if(isMobileMenuOpened) {
+                isMobileMenuOpened = false;
+            } else {
+                isMobileMenuOpened = true;
+            }
+        };
+        function syncMobileMenu() {
+            if(isMobileMenuOpened) {
+                menuButton.classList.add('_active');
+                mobileMenu.classList.add('_active');
+            } else {
+                menuButton.classList.remove('_active');
+                mobileMenu.classList.remove('_active');
+            }
+        }
+ 
+        if(menuButton && mobileMenu) {
+            menuButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                checkMobileMenuState();
+                syncMobileMenu();
+        })
+        }
+        document.body.addEventListener('click', (e) => {
+            if(mobileMenu) {
+                isMobileMenuOpened = false;
+                syncMobileMenu();
+            }
+        })
+        
+      </script>
 </html>

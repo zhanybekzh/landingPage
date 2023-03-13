@@ -1,0 +1,36 @@
+.vertical-service-img-features {
+    margin-top: 70px;
+    & &__items {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr;
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    ul {
+        padding-left: 20px;
+    }
+    & &__item {
+      display: flex;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+      flex-direction: column;
+      min-height: auto;
+    }
+    & &__img-block {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 205px;
+    }
+    & &__content {
+      min-height: unset;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    & &__title {
+      font-weight: 700;
+    }
+  }

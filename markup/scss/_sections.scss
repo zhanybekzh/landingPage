@@ -1,15 +1,95 @@
 .section {
+    
     &__title {
         text-align: center;
         margin-bottom: 40px;
+        font-weight: 500;
     }
     &__subtitle {
-        text-align: center;
         font-weight: normal;
-        font-size: 1.2rem;
+        text-align: center;
     }
-    padding: 70px 0;
+    padding: 80px 0;
     &:nth-child(2n + 1) {
         background-color: #eff2f7;
     }
+    &.get-help {
+        padding: 80px 0 80px;
+        min-height: 400px;
+        color: white;
+
+        text-align: center;
+        p {
+            
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.4rem;
+        }
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+                    url('./../../assets/img/banner.webp') center/cover no-repeat;
+    }
+    &.licenses {
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        .swiper-button-next, 
+        .swiper-button-prev {
+            color: #83ab42; 
+        }
+        .swiper {
+            padding-bottom: 40px;
+            &-slide {
+                width:60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{ width:80%;
+                    max-width: 540px;
+            }
+        }
+        }
+        
+    }
+    &.map {
+        padding: 0;
+        position: relative;
+        @media (min-width:576px) {
+        }
+        .contacts {
+            h3 {
+                color: white;
+            }
+            background-color: black;
+            color: white;
+            position: static;
+            display: flex;
+            flex-direction: column;
+            padding: 60px 20px 60px;
+            @media(min-width:576px) {
+                padding: 60px;
+            }
+            @media(min-width: 768px) {
+                padding: 60px 120px;
+            }
+            @media(min-width:992px) {
+                position: absolute;
+                padding: 40px;
+                left: 15%;
+                top:60px;
+            }
+            @media(min-width: 1300px) {
+                left:20%;
+            }
+            a {
+                color:  white;
+                &:hover {
+                    color: #83ab42;
+                }
+            }
+            
+        }
+    }
+
 }
+
