@@ -25,134 +25,19 @@
       background-color: $color-gray-100;
     }
   
-    &-radio {
-      margin-bottom: 10px;
-      list-style: none;
-  
-      input[type="radio"] {
-        display: none;
-  
-        &:checked+label::after {
-          content: "";
-          border-radius: 50%;
-          width: 13px;
-          height: 13px;
-          position: absolute;
-          top: 50%;
-          left: 13px;
-          transform: translate(-50%, -50%);
-          z-index: 2;
-          background-color: $color-green-300;
-        }
-  
-        &:disabled {
-          &+label {
-            cursor: default;
-          }
-  
-          &+label::before {
-            background: none;
-            cursor: default;
-            border: 1px solid $color-gray-300;
-            border-radius: 50%;
-          }
-        }
-      }
-  
-      &.form-radio_white {
-        label {
-          &:before {
-            border-color: $color-white;
-          }
-        }
-  
-        input[type="radio"] {
-          &:checked+label::after {
-            background-color: $color-white;
-          }
-        }
-      }
-  
-      label {
-        position: relative;
-        padding-left: 35px;
-        margin-right: 0;
-        cursor: pointer;
-  
-        &:before {
-          content: "";
-          border: 1px solid $color-green-300;
-          border-radius: 50%;
-          width: 26px;
-          height: 26px;
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translateY(-50%);
-        }
-      }
-    }
-  
-    &-checkbox {
-      list-style: none;
-      margin-bottom: 10px;
-  
-      input[type="checkbox"] {
-        display: none;
-  
-        &:checked+label::before {
-          background: url("../../assets/icons/custom/checkbox-button_active.svg") center no-repeat;
-        }
-  
-        &:disabled {
-          &+label {
-            cursor: default;
-          }
-  
-          &+label::before {
-            background: none;
-            cursor: default;
-            border: 1px solid $color-gray-300;
-            border-radius: 5px;
-          }
-        }
-      }
-  
-      label {
-        position: relative;
-        padding-left: 35px;
-        margin-right: 0;
-        cursor: pointer;
-  
-        &:before {
-          content: "";
-          width: 26px;
-          height: 26px;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background: url("../../assets/icons/custom/checkbox-button.svg") center no-repeat;
-        }
-      }
-    }
-  
-    fieldset {
-      border: 1px solid $color-gray-300;
-      border-radius: 5px;
-      padding: 10px;
-    }
   
     &-input {
       &__label {
         display: block;
         padding-bottom: 0.3rem;
         color: $color-gray-400;
+        font-size: 20px;
       }
   
       &__input {
         min-height: 45px;
         display: block;
-        border-radius: 5px;
+
         border: 1px solid $color-gray-300;
         padding: 0.5rem 0.8rem;
         width: 100%;
@@ -170,8 +55,7 @@
   
         &:focus {
           outline: 0;
-          border-color: $color-black-text;
-          box-shadow: 0px 5px 15px rgba(76, 86, 86, 0.2);
+          border-color: #83ab42;
   
           &~.form-input__with-icon,
           &~.form-input__right-button {

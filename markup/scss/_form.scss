@@ -1,5 +1,9 @@
 .form {
   @include form();
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  align-items: center;
   &__columns {
     display: grid;
     grid-template-columns: 1fr;
@@ -7,104 +11,5 @@
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
-  &-addition-right-btn {
-    display: flex;
-    flex-direction: row;
-    .form-select__select,
-    .form-input__input {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      flex:1 1 0%;
-    }
-  }
-  .addition-right-btn {
-    cursor: pointer;
-    position: relative;
-    background-color: $color-gray-200;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $color-gray-300;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-left: none;
-    width: 45px;
-    height: 45px;
-    z-index: 2;
-  }
-  .addition-right-btn-plus {
-    position: absolute;
-  }
-  .incAndDecrButtons {
-    height: 45px;
-    width: 157px;
-    display: flex;
-    align-items: center;
-    background: #FFF;
-    border-radius: 4px;
-    border: 1px solid #BDBDBD;
-    padding: 0;
-    margin: 0;
-    flex-shrink: 0;
-    &__block {
-      display: flex;
-      align-items: center;
-      gap:10px;
-      p {
-        margin-bottom: 0;
-      }
-    }
-    input.num{
-      color:#454240;
-      width: 67px;
-      text-align: center;
-      font-size: 1rem;
-      border:none;
-      height:100%;
-      border-left: 1px solid #BDBDBD;
-      border-right: 1px solid #BDBDBD;
-      padding: 0;
-      appearance: none;
-      &:focus {
-        outline:none;
-      }
-    }
-    button.btn {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height:45px;
-      flex: 0 0 45px;
-      border:none;
-      &.minus {
-        background: url('./../../assets/icons/custom/minus_btn.svg') no-repeat center;
-      }
-      &.plus {
-        background: url('./../../assets/icons/custom/plus_btn.svg') no-repeat center;
-      }
-    }
-    input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none; // Yeah, yeah everybody write about it
-    }
-
-    input[type='number'],
-    input[type="number"]:hover,
-    input[type="number"]:focus {
-        appearance: none;
-        -moz-appearance: textfield;
-    }
-  }
-
-
-
-  .check-radio-list {
-    display: flex;
-    padding: 0;
-    column-gap: 40px;
-    row-gap: 20px;
-    flex-wrap: wrap;
   }
 }

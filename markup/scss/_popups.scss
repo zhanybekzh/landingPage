@@ -1,0 +1,83 @@
+.popup {
+  width: 100%;
+  
+  &-wrapper {
+    max-height: calc(100vh - 3em);
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background-color: $color-white;
+    position: relative;
+    @media(min-width:360px) {
+      max-width: 360px;
+    }
+    @media(min-width: 576px) {
+      max-width: 80%;
+      // padding: 45px 45px 70px 45px;
+    }
+    @media (min-width:700px) {
+      max-width: 700px;
+    }
+  }
+  .form {
+    width: 100%;
+    .form-input {
+      width:100%;
+    }
+  }
+  .button {
+    width:100%;
+    @media(min-width:768px) {
+      width:60%;
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: 576px) {
+    &-question {
+      .popup__button {
+        min-width: 100px !important;
+      }
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    background-color: #83ab42;
+    width: 45px;
+    height:45px;
+    border:none;
+    background-size: 14px;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    &:hover {
+      background-color: #a5d952;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2a3813;
+  }
+  &__text {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+  }
+  &__buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-question {
+  }
+  &__button {
+  }
+}

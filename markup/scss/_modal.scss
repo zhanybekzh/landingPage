@@ -1,0 +1,20 @@
+.modal {
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 3em;
+    background-color: rgba(0,0,0,.75);
+    z-index: 999999;
+    &.opened {
+        display: flex;
+    }
+}
+.scroll-hidden {
+    overflow: hidden;
+  }
+  
