@@ -1,0 +1,40 @@
+.partners {
+  background-color: white ;
+  & .partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 0;
+    margin: 0;
+  }
+  & .partners-item {
+    list-style: none;
+    min-height:70px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 300px) {
+      max-width: 250px;
+    }
+  }
+  & .partners-item img {
+
+  }
+  &-swiper {
+    .swiper-slide {
+      transition: opacity ease .3s;
+      opacity: 0;
+    }
+    .swiper-slide-visible {
+      opacity: 1;
+    }
+    .swiper-slide img {
+      width: 200px;
+      max-height: 80px;
+    }
+  }
+}

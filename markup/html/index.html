@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         //= ./templates/head.html
-        
+
     </head>
     <body>
         <main id="main">
@@ -271,6 +271,79 @@
                     </div>
                 </div>
             </section>
+            <section class="section partners">
+
+                <div class="container">
+                    <h2 class="section__title mb-60">НАШИ ПАРТНЕРЫ</h2>
+                    <div class="partners-swiper mt-60">
+                        <ul class="partners-list ">
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/interin.jpeg"
+                                    alt="Наши партнеры компания 'Interin'"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/orica.jpeg"
+                                    alt="Наши партнеры компания 'Orica'"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/sms.jpeg"
+                                    alt="Наши партнеры компания 'Sine midas stroy'"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/slide1.webp"
+                                    alt="Наши партнеры компания 'Алина'"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/slide2.webp"
+                                    alt="Наши партнеры компания 'ЗСМ'"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/slide3.webp"
+                                    alt="Наши партнеры компания 'Railways systems kz'"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/slide4.webp"
+                                    alt="Наши партнеры компания 'PROMVZRYV'"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/slide5.webp"
+                                    alt="Наши партнеры компания 'ShymkentCEMENT'"
+                                    loading="lazy"
+                                />
+                            </li>
+                            <li class="partners-item ">
+                                <img
+                                    src="./assets/img/slide6.webp"
+                                    alt="Наши партнеры компания 'QalbatayMining'"
+                                    loading="lazy"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <section id="order" class="section get-help">
                 <div class="container">
                     <h2 class="section__title">ОБРАТНАЯ СВЯЗЬ</h2>
@@ -391,13 +464,14 @@
                     </div>
                 </div>
             </section>
+
             <section id="contacts" class="section map">
                 <div class="contacts">
                     <h3>Буровые работы</h3>
                     <h3 class="mb-40">ТОО "ГЕО ЛИНИЯ"</h3>
                     <p class="mb-20">Время работы: Пн - Пт, 9.00 - 18.00</p>
                     <p class="mb-0">
-                        <a href="tel:+77764222201">+7 775 009 49 91</a>
+                        <a href="tel:+77750094991">+7 775 009 49 91</a>
                     </p>
                     <p class="mb-0">
                         <a href="mailto:info@geo-line.kz">info@geo-line.kz</a>
@@ -509,7 +583,7 @@
             </div>
         </div>
     </body>
-    <script 
+    <script
          src="./markup/js/feather.min.js"></script>
     <script>
         feather.replace();
@@ -527,7 +601,9 @@
             preloadImages: false,
             lazy: true,
             grabCursor: true,
+
             centeredSlides: true,
+            lazyPreloadPrevNext: 3,
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -536,7 +612,15 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+                loop: true,
             },
+        });
+        const partnersSwiper = new Swiper(".partners-swiper", {
+            slidesPerView: 4,
+            autoplay: true,
+            spaceBetween: 30,
+            watchSlidesProgress: true,
+            loop: true,
         });
     </script>
     <script>
@@ -673,13 +757,13 @@
                 });
                 result = await response.json();
                 if(await result.success) {
-                
+
                 modalSendForm.style.display = 'none';
                 modalThanks.style.display = 'block';
             }
                 return await result;
             })
-            
+
         })();
     </script>
 </html>
