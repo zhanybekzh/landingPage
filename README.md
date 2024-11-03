@@ -1,4 +1,4 @@
 # Приветствую, 
 Это проект для заказчика который хотел продвинуть свои услуги через интернет с помощью лендинговой страницы.
-Опубликованная версия на [github](https://zhanybekzh.github.io/landingPage/)
+Опубликованная версия на [github](https://zhanybekzh.github.io/landingPage/)  
 Использованы html, scss, js, php.
